@@ -4,7 +4,7 @@ import MovieListItem from './MovieListItem';
 import MovieFooter from './MovieFooter';
 
 const MovieList = (props)=> {
-    const movies = props.movies;
+    const movies = props.movieReducer.movies;
 
     return (
         <div className="col">
@@ -31,4 +31,4 @@ const MovieList = (props)=> {
     );
 }
 
-export default connect(suuWEEEEE => ({movies: suuWEEEEE.movies}))(MovieList)
+export default connect(suuWEEEEE => suuWEEEEE)(MovieList)
